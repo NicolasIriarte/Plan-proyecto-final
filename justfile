@@ -6,4 +6,4 @@ build:
 # Clean repository.
 clean:
     #!/bin/bash
-    rm -rf *.aux *.log *.out *.toc *.pdf
+    rm -rf *.aux  chapters/*.aux *.log *.out *.toc *.pdf
