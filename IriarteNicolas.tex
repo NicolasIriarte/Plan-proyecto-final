@@ -1,27 +1,24 @@
 \documentclass[
 11pt, % The default document font size, options: 10pt, 11pt, 12pt
 codirector, % Uncomment to add a codirector to the title page
-]{charter} 
-
-
-
+]{charter}
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Título del proyecto} 
+\titulo{Título del proyecto}
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
-\posgrado{Carrera de Especialización en Sistemas Embebidos} 
-%\posgrado{Carrera de Especialización en Internet de las Cosas} 
+\posgrado{Carrera de Especialización en Sistemas Embebidos}
+%\posgrado{Carrera de Especialización en Internet de las Cosas}
 %\posgrado{Carrera de Especialización en Intelegencia Artificial}
-%\posgrado{Maestría en Sistemas Embebidos} 
+%\posgrado{Maestría en Sistemas Embebidos}
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Nombre del Autor} 
+\autor{Nombre del Autor}
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
 \director{Nombre del Director}
-\pertenenciaDirector{pertenencia} 
+\pertenenciaDirector{pertenencia}
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
 \codirector{John Doe} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
 \pertenenciaCoDirector{FIUBA}
@@ -32,12 +29,12 @@ codirector, % Uncomment to add a codirector to the title page
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
 \juradoUno{Nombre y Apellido (1)}
-\pertenenciaJurUno{pertenencia (1)} 
+\pertenenciaJurUno{pertenencia (1)}
 \juradoDos{Nombre y Apellido (2)}
 \pertenenciaJurDos{pertenencia (2)}
 \juradoTres{Nombre y Apellido (3)}
 \pertenenciaJurTres{pertenencia (3)}
- 
+
 \fechaINICIO{30 de abril de 2021}		%Fecha de inicio de la cursada de GdP \fechaInicioName
 \fechaFINALPlan{18 de junio de 2021} 	%Fecha de final de cursada de GdP
 \fechaFINALTrabajo{15 de mayo de 2022}	%Fecha de defensa pública del trabajo final
@@ -66,7 +63,7 @@ codirector, % Uncomment to add a codirector to the title page
 \centering
 \begin{tabularx}{\linewidth}{@{}|c|X|c|@{}}
 \hline
-\rowcolor[HTML]{C0C0C0} 
+\rowcolor[HTML]{C0C0C0}
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
 %1      & Se completa hasta el punto 4 inclusive                 & dd/mm/aaaa \\ \hline
@@ -102,10 +99,10 @@ Se adjunta a esta acta la planificación inicial.
 \begin{table}[ht]
 \centering
 \begin{tabular}{ccc}
-\begin{tabular}[c]{@{}c@{}}Dr. Ing. Ariel Lutenberg \\ Director posgrado FIUBA\end{tabular} & \hspace{2cm} & \begin{tabular}[c]{@{}c@{}}\clientename \\ \empclientename \end{tabular} \vspace{2.5cm} \\ 
+\begin{tabular}[c]{@{}c@{}}Dr. Ing. Ariel Lutenberg \\ Director posgrado FIUBA\end{tabular} & \hspace{2cm} & \begin{tabular}[c]{@{}c@{}}\clientename \\ \empclientename \end{tabular} \vspace{2.5cm} \\
 \multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \supname \\ Director del Trabajo Final\end{tabular}} \vspace{2.5cm} \\
 %\begin{tabular}[c]{@{}c@{}}\jurunoname \\ Jurado del Trabajo Final\end{tabular}     &  & \begin{tabular}[c]{@{}c@{}}\jurdosname\\ Jurado del Trabajo Final\end{tabular}  \vspace{2.5cm}  \\
-%\multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \jurtresname\\ Jurado del Trabajo Final\end{tabular}} \vspace{.5cm}                                                                     
+%\multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \jurtresname\\ Jurado del Trabajo Final\end{tabular}} \vspace{.5cm}
 \end{tabular}
 \end{table}
 
@@ -139,7 +136,7 @@ La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en
 Las figuras se deben mencionar en el texto ANTES de que aparezcan con una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''.  La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
 
 \begin{figure}[htpb]
-\centering 
+\centering
 \includegraphics[width=.5\textwidth]{./Figuras/diagBloques.png}
 \caption{Diagrama en bloques del sistema}
 \label{fig:diagBloques}
@@ -153,11 +150,11 @@ El tamaño de la tipografía en TODAS las figuras debe ser adecuado para que NO 
 \section{2. Identificación y análisis de los interesados}
 \label{sec:interesados}
 
-\begin{consigna}{red} % este comando se debe borrar para la entrega, junto con la contraparte \end{consigna}{red} 
- 
-\textbf{Nota importante:} borrar esto y todas las consignas en color rojo antes de entregar este documento). Esto se hace eliminando el par de comandos que forman el bloque consigna, \verb!\begin{consigna}{red}! y \verb!\end{consigna}{red}! del código. 
- 
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos. Si se considera que una persona cumple dos o más roles, entonces solo dejarla en el rol más importante. 
+\begin{consigna}{red} % este comando se debe borrar para la entrega, junto con la contraparte \end{consigna}{red}
+
+\textbf{Nota importante:} borrar esto y todas las consignas en color rojo antes de entregar este documento). Esto se hace eliminando el par de comandos que forman el bloque consigna, \verb!\begin{consigna}{red}! y \verb!\end{consigna}{red}! del código.
+
+Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos. Si se considera que una persona cumple dos o más roles, entonces solo dejarla en el rol más importante.
 
 Por ejemplo, si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente. Si una persona es el Responsable, no debe ser colocado también como miembro del equipo.
 
@@ -167,7 +164,7 @@ Por ejemplo, si una persona es Cliente pero también colabora u orienta, dejarla
 %\label{tab:interesados}
 \begin{tabularx}{\linewidth}{@{}|l|X|X|l|@{}}
 \hline
-\rowcolor[HTML]{C0C0C0} 
+\rowcolor[HTML]{C0C0C0}
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
 Auspiciante   &                   &              	&        	\\ \hline
 Cliente       & \clientename      &\empclientename	&        	\\ \hline
@@ -175,7 +172,7 @@ Impulsor      &                   &              	&        	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
 Colaboradores &                   &              	&        	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director Trabajo final \\ \hline
-Equipo        & miembro1 \newline 
+Equipo        & miembro1 \newline
 				miembro2          &              	&        	\\ \hline
 Opositores    &                   &              	&        	\\ \hline
 Usuario final &                   &              	&        	\\ \hline
@@ -189,7 +186,7 @@ No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo 
 No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
 
 Es deseable listar a continuación las principales características de cada interesado.
- 
+
 Por ejemplo:
 \begin{itemize}
 	\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
@@ -205,7 +202,7 @@ Por ejemplo:
 \label{sec:proposito}
 
 \begin{consigna}{red}
-¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
+¿Por qué se hace el proyecto? ¿Qué se quiere lograr?
 
 Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de este proyecto es...''.
 \end{consigna}
@@ -216,7 +213,7 @@ Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de e
 \begin{consigna}{red}
 ¿Qué se incluye y que no se incluye en este proyecto?
 
-Se refiere al trabajo a hacer para entregar el producto o resultado especificado. 
+Se refiere al trabajo a hacer para entregar el producto o resultado especificado.
 
 Explicitar todo lo quede comprendido dentro del alcance del proyecto.
 
@@ -265,13 +262,13 @@ Los requerimientos deben numerarse y de ser posible estar agruparlos por afinida
 
 Leyendo los requerimientos se debe poder interpretar cómo será el proyecto y su funcionalidad.
 
-Indicar claramente cuál es la prioridad entre los distintos requerimientos y si hay requerimientos opcionales. 
+Indicar claramente cuál es la prioridad entre los distintos requerimientos y si hay requerimientos opcionales.
 
 No olvidarse de que los requerimientos incluyen a las regulaciones y normas vigentes!!!
 
 Y al escribirlos seguir las siguientes reglas:
 \begin{itemize}
-	\item Ser breve y conciso (nadie lee cosas largas). 
+	\item Ser breve y conciso (nadie lee cosas largas).
 	\item Ser específico: no dejar lugar a confusiones.
 	\item Expresar los requerimientos en términos que sean cuantificables y medibles.
 \end{itemize}
@@ -338,7 +335,7 @@ El WBS debe tener relación directa o indirecta con los requerimientos.  Son tod
 
 Cantidad total de horas: (tantas h)
 
-Se recomienda que no haya ninguna tarea que lleve más de 40 h. 
+Se recomienda que no haya ninguna tarea que lleve más de 40 h.
 
 \end{consigna}
 
@@ -346,7 +343,7 @@ Se recomienda que no haya ninguna tarea que lleve más de 40 h.
 \label{sec:AoN}
 
 \begin{consigna}{red}
-Armar el AoN a partir del WBS definido en la etapa anterior. 
+Armar el AoN a partir del WBS definido en la etapa anterior.
 
 %La figura \ref{fig:AoN} fue elaborada con el paquete latex tikz y pueden consultar la siguiente referencia \textit{online}:
 
@@ -355,7 +352,7 @@ Armar el AoN a partir del WBS definido en la etapa anterior.
 \end{consigna}
 
 \begin{figure}[htpb]
-\centering 
+\centering
 \includegraphics[width=.8\textwidth]{./Figuras/AoN.png}
 \caption{Diagrama de \textit{Activity on Node}.}
 \label{fig:AoN}
@@ -382,7 +379,7 @@ Existen muchos programas y recursos \textit{online} para hacer diagramas de Gant
 \item Se puede hacer en latex con el paquete \textit{pgfgantt}\\ \url{http://ctan.dcc.uchile.cl/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf}
 \end{itemize}
 
-Pegar acá una captura de pantalla del diagrama de Gantt, cuidando que la letra sea suficientemente grande como para ser legible. 
+Pegar acá una captura de pantalla del diagrama de Gantt, cuidando que la letra sea suficientemente grande como para ser legible.
 Si el diagrama queda demasiado ancho, se puede pegar primero la ``tabla'' del Gantt y luego pegar la parte del diagrama de barras del diagrama de Gantt.
 
 Configurar el software para que en la parte de la tabla muestre los códigos del EDT (WBS).\\
@@ -412,7 +409,7 @@ En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de Gantt realiza
 
 \begin{landscape}
 \begin{figure}[htpb]
-\centering 
+\centering
 \includegraphics[height=.85\textheight]{./Figuras/Gantt-2.png}
 \caption{Ejemplo de diagrama de Gantt rotado}
 \label{fig:diagGantt}
@@ -441,9 +438,9 @@ IMPORTANTE: No olvidarse de considerar los COSTOS INDIRECTOS.
 \centering
 \begin{tabularx}{\linewidth}{@{}|X|c|r|r|@{}}
 \hline
-\rowcolor[HTML]{C0C0C0} 
+\rowcolor[HTML]{C0C0C0}
 \multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS DIRECTOS} \\ \hline
-\rowcolor[HTML]{C0C0C0} 
+\rowcolor[HTML]{C0C0C0}
 Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
@@ -466,9 +463,9 @@ Descripción &
    \\ \hline
 \multicolumn{3}{|c|}{SUBTOTAL} &
   \multicolumn{1}{c|}{} \\ \hline
-\rowcolor[HTML]{C0C0C0} 
+\rowcolor[HTML]{C0C0C0}
 \multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS INDIRECTOS} \\ \hline
-\rowcolor[HTML]{C0C0C0} 
+\rowcolor[HTML]{C0C0C0}
 Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
@@ -499,24 +496,24 @@ Descripción &
 
 \begin{consigna}{red}
 a) Identificación de los riesgos (al menos cinco) y estimación de sus consecuencias:
- 
+
 Riesgo 1: detallar el riesgo (riesgo es algo que si ocurre altera los planes previstos de forma negativa)
 \begin{itemize}
 	\item Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).\\
 	Justificar el motivo por el cual se asigna determinado número de severidad (S).
 	\item Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de (O). 
-\end{itemize}   
+	Justificar el motivo por el cual se asigna determinado número de (O).
+\end{itemize}
 
 Riesgo 2:
 \begin{itemize}
-	\item Severidad (S): 
+	\item Severidad (S):
 	\item Ocurrencia (O):
 \end{itemize}
 
 Riesgo 3:
 \begin{itemize}
-	\item Severidad (S): 
+	\item Severidad (S):
 	\item Ocurrencia (O):
 \end{itemize}
 
@@ -527,7 +524,7 @@ b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 \centering
 \begin{tabularx}{\linewidth}{@{}|X|c|c|c|c|c|c|@{}}
 \hline
-\rowcolor[HTML]{C0C0C0} 
+\rowcolor[HTML]{C0C0C0}
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
        &   &   &     &    &    &      \\ \hline
        &   &   &     &    &    &      \\ \hline
@@ -537,13 +534,13 @@ Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
 \end{tabularx}%
 \end{table}
 
-Criterio adoptado: 
+Criterio adoptado:
 Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a...
 
 Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
 
 c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
- 
+
 Riesgo 1: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
   Nueva asignación de S y O, con su respectiva justificación:
   - Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).
@@ -552,7 +549,7 @@ Riesgo 1: plan de mitigación (si por el RPN fuera necesario elaborar un plan de
           Justificar el motivo por el cual se asigna determinado número de (O).
 
 Riesgo 2: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
- 
+
 Riesgo 3: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
 
 \end{consigna}
@@ -564,12 +561,12 @@ Riesgo 3: plan de mitigación (si por el RPN fuera necesario elaborar un plan de
 \begin{consigna}{red}
 Elija al menos diez requerientos que a su criterio sean los más importantes/críticos/que aportan más valor y para cada uno de ellos indique las acciones de verificación y validación que permitan asegurar su cumplimiento.
 
-\begin{itemize} 
+\begin{itemize}
 \item Req \#1: copiar acá el requerimiento.
 
 \begin{itemize}
-	\item Verificación para confirmar si se cumplió con lo requerido antes de mostrar el sistema al cliente. Detallar 
-	\item Validación con el cliente para confirmar que está de acuerdo en que se cumplió con lo requerido. Detallar  
+	\item Verificación para confirmar si se cumplió con lo requerido antes de mostrar el sistema al cliente. Detallar
+	\item Validación con el cliente para confirmar que está de acuerdo en que se cumplió con lo requerido. Detallar
 \end{itemize}
 
 \end{itemize}
@@ -578,7 +575,7 @@ Tener en cuenta que en este contexto se pueden mencionar simulaciones, cálculos
 
 \end{consigna}
 
-\section{15. Procesos de cierre}    
+\section{15. Procesos de cierre}
 \label{sec:cierre}
 
 \begin{consigna}{red}
@@ -586,7 +583,7 @@ Establecer las pautas de trabajo para realizar una reunión final de evaluación
 
 \begin{itemize}
 	\item Pautas de trabajo que se seguirán para analizar si se respetó el Plan de Proyecto original:
-	 - Indicar quién se ocupará de hacer esto y cuál será el procedimiento a aplicar. 
+	 - Indicar quién se ocupará de hacer esto y cuál será el procedimiento a aplicar.
 	\item Identificación de las técnicas y procedimientos útiles e inútiles que se emplearon, y los problemas que surgieron y cómo se solucionaron:
 	 - Indicar quién se ocupará de hacer esto y cuál será el procedimiento para dejar registro.
 	\item Indicar quién organizará el acto de agradecimiento a todos los interesados, y en especial al equipo de trabajo y colaboradores:
