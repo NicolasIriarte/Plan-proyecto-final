@@ -24,7 +24,7 @@
 \LoadClass[a4paper]{article}
 
 %----------------------------------------------------------------------------------------
-%	DEFINE CUSTOM PLAN INFORMATION COMMANDS 
+%	DEFINE CUSTOM PLAN INFORMATION COMMANDS
 %----------------------------------------------------------------------------------------
 %TODO Uniformizar el nombre de los comandos a camelCase
 \def\authorname{}
@@ -54,7 +54,7 @@
 \newcommand*{\pertenenciaJurTres}[1]{\def\pertetresame{#1}}
 \newcommand*{\fechaINICIO}[1]{\def\fechaInicioName{#1}}
 \newcommand*{\fechaFINALPlan}[1]{\def\fechaFinalPlanName{#1}}
-\newcommand*{\fechaFINALTrabajo}[1]{\def\fechaFinalName{#1}} 
+\newcommand*{\fechaFINALTrabajo}[1]{\def\fechaFinalName{#1}}
 
 
 
@@ -83,7 +83,7 @@
 \usepackage{color}
 \usepackage[top=1in,bottom=1in,left=1in,right=1in,vcentering]{geometry}
 \usepackage{float}
-\usepackage{relsize} 
+\usepackage{relsize}
 \usepackage{url}
 %\usepackage[plainpages=false,breaklinks=true,pdfpagelabels=true,pagebackref]{hyperref}
 \usepackage[english, spanish]{babel}
@@ -95,7 +95,7 @@
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{multirow}
 \usepackage{tabularx}
-\usepackage{pgfgantt} 
+\usepackage{pgfgantt}
 \usepackage{graphicx}
 \usepackage[section]{placeins} % evita que los floats se pueden ubicar más allá de un \section{•}
 \usepackage[labelsep=period]{caption}
@@ -129,7 +129,7 @@
 \fancyhf{} % clear all header and footers
 \pagestyle{fancy}
 
-\lhead{\includegraphics[width=3.5cm]{./Figuras/logoFIUBA.pdf}}
+\lhead{\includegraphics[width=3.5cm]{./assets/logoFIUBA.pdf}}
 \chead{}
 \rhead{\normalsize \textrm{Plan de proyecto de Trabajo final \\\degreename\\ \authorname}}
 \lfoot{ }
@@ -149,8 +149,8 @@
 \renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
 
 \hypersetup{
-  bookmarksnumbered = true, 
-  pdftitle={\@title}, 
+  bookmarksnumbered = true,
+  pdftitle={\@title},
   pdfauthor={\@author},
   pdfpagelayout=OneColumn,
   bookmarksopen=False,
@@ -183,18 +183,18 @@
 \newpage
 \thispagestyle{empty}
 \centering
-	
-	\centering \includegraphics[width=.7\textwidth]{./Figuras/logoFIUBA.pdf}
-	
+
+	\centering \includegraphics[width=.7\textwidth]{./assets/logoFIUBA.pdf}
+
 	\vspace{3cm}
 	{\Huge \textbf{\ttitle}} \\
 	\vspace{4cm}
-	
+
 	\flushleft
 	{\normalsize Autor:\\}
 	{\Large \authorname \\}
 	\vspace{1cm}
-	
+
 	{\normalsize Director:\\}
 	{\Large \supname \hspace{1px} (\pertesupname) \\}
 	%\vspace{2cm}
@@ -204,12 +204,12 @@
 	{\Large \cosupname  \hspace{1px} (\pertecosupname) \\}
 	}{\vspace{2pc}%nothing
 	}
-		
-	
+
+
     \vfill
     \centering
     \textit{Esta planificación fue realizada en el curso de Gestión de proyectos\\ entre el \fechaInicioName \hspace{1px} y el  \fechaFinalPlanName.}
-		
+
 	\pagebreak
   }
 
@@ -224,7 +224,7 @@
               {}
               {}
               {\mdseries\titlerule*[.75pc]{.}\bfseries\contentspage}
-    
+
 %\renewcommand{\thesection}{}% Remove section references...
 %\renewcommand{\thesubsection}{\arabic{subsection}}%... from subsections
 
