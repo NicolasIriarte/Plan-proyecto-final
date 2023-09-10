@@ -1,11 +1,57 @@
 \section{7. Historias de usuarios (\textit{Product backlog})}
-\label{sec:backlog}
+\label{sec:7-historias-de-usuarios-product-backlog}
 
-\begin{consigna}{red}
-Descripción: En esta sección se deben incluir las historias de usuarios y su ponderación (\textit{history points}). Recordar que las historias de usuarios son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema. La ponderación es un número entero que representa el tamaño de la historia comparada con otras historias de similar tipo.
+Roles:
 
-El formato propuesto es: "como [rol] quiero [tal cosa] para [tal otra cosa]."
+\begin{itemize}
+\item Desarrollador de modelos simulados: quien se encarga de desarrollar dispositivos de manera simulada. Tales como podrían ser memorias, FPGAs y/o periféricos.
+\item Desarrollador de software de vuelo: quien se encarga de desarrollar un driver o software que usa interfaces de bajo nivel. Durante el diseño e implementación, utiliza este sistema para interactuar con el hardware.
+\item Ingeniero de pruebas: quien se encarga de automatizar los ensayos de calificación de hardware y/o de componentes que lo emulen.
+\end{itemize}
 
-Se debe indicar explícitamente el criterio para calcular los \textit{story points} de cada historia
-\end{consigna}
+Story Points:
 
+\begin{itemize}
+\item Se analizarán las historias según dificultad, complejidad e incertidumbre, tomando valores de Fibonacci usando el siguiente criterio:
+  \begin{enumerate}
+  \item Dificultad: cantidad de trabajo a realizar. Representado con la letra ``\textbf{D}''.
+
+    \begin{itemize}
+    \item Bajo: 1
+    \item Medio: 3
+    \item Alto: 13
+    \end{itemize}
+
+  \item Complejidad: complejidad de trabajo a realizar. Representado con la letra ``\textbf{C}''.
+
+    \begin{itemize}
+    \item Bajo: 1
+    \item Medio: 5
+    \item Alto: 13
+    \end{itemize}
+
+  \item Incertidumbre: Riesgo del trabajo a realizar. Representado con la letra ``\textbf{I}''.
+
+    \begin{itemize}
+    \item Bajo: 1
+    \item Medio: 3
+    \item Alto: 5
+    \end{itemize}
+
+  \end{enumerate}
+
+\end{itemize}
+
+Historias de Usuarios:
+
+\begin{itemize}
+\item Como desarrollador de modelos simulados quiero poder comunicarme con el software de vuelo. D: 3, C: 5, I: 5 Total = 13p.
+
+\item Como desarrollor de modelos simulados quiero poder ejecutar el software de vuelo como una librería. D: 3, C: 1, I: 1. Total = 5p.
+
+\item Como desarrollador de software de vuelo quiero poder estimular los registros, memorias y hardware para el desarrollo de controladores (\textit{drivers}). D: 13, C: 13, I: 5. Total = 34p.
+
+\item Como desarrollador de software de vuelo quiero que mi software corra a tiempo real. D: 5, C: 5, I: 5. Total = 21p.
+
+\item Como ingeniero de pruebas quiero que mis pruebas puedan ser ejecutadas automáticamente en un entonces de desarrollo continuo (por ejemplo GitLab CI). D: 3, C: 2, I: 2. Total = 8p.
+\end{itemize}
