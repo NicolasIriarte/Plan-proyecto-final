@@ -1,24 +1,27 @@
 \section{10. Diagrama de Activity On Node}
 \label{sec:AoN}
 
-\begin{consigna}{red}
-Armar el AoN a partir del WBS definido en la etapa anterior.
+En la figura \ref{fig:AoN} se ilustra el diagrama de \textit{Activity on Node}. Las tareas están agrupadas en la misma forma que en la sección anterior:
 
-%La figura \ref{fig:AoN} fue elaborada con el paquete latex tikz y pueden consultar la siguiente referencia \textit{online}:
+\begin{enumerate}
+\item Gestión del proyecto.
+\item Investigación y capacitación en la arquitectura del microprocesador.
+\item Desarrollo del ambiente de automatización.
+\item Internalización de código pre-existente.
+\item Investigación y capacitación en el framework de LLVM.
+\item Desarrollo del software.
+\item Desarrollo de tests unitarios y de API.
+\item Documentación.
+\item Presentación del trabajo.
+\end{enumerate}
 
-%\url{https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_3)\%E2\%80\%94Creating_Flowcharts}
-
-\end{consigna}
+Cada tarea está etiquetada con una letra \textbf{T} seguida de su número de tarea. Por ejemplo, T1.1 corresponde a la tarea ``1.1 - Definición de requerimientos con el cliente''. El camino crítico, cuya duración es de 382 horas, se muestra resaltado en color rojo. El camino semicrítico se muestra resaltado en color azul. Mientras que el no crítico en se denota con una flecha puntuada.
 
 \begin{figure}[htpb]
-\centering
-\includegraphics[width=.8\textwidth]{./assets/AoN.png}
-\caption{Diagrama de \textit{Activity on Node}.}
-\label{fig:AoN}
+  \centering
+  \includegraphics[width=.90\textwidth]{./assets/AoN.png}
+  \caption{Diagrama de \textit{Activity on Node}.}
+  \label{fig:AoN}
 \end{figure}
 
-Indicar claramente en qué unidades están expresados los tiempos.
-De ser necesario indicar los caminos semicríticos y analizar sus tiempos mediante un cuadro.
-Es recomendable usar colores y un cuadro indicativo describiendo qué representa cada color, como se muestra en el siguiente ejemplo:
-
-
+\vspace{25px}

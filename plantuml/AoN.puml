@@ -1,0 +1,114 @@
+@startuml
+
+' Arrows
+' -[#red, bold]->
+' -[dashed]->
+
+
+:INICIO;
+-[#red,bold]->
+
+package "1" {
+  #ffc6c6:T1.1 - tiempo = 4h;
+  -[#red,bold]->
+  #ffc6c6:T1.2 - tiempo = 20h;
+  -[#red,bold]->
+}
+split
+
+package "2" {
+  -[#blue,bold]->
+  #b0c9fb:T2.1 - tiempo = 3h;
+  -[#blue,bold]->
+  #b0c9fb:T2.2 - tiempo = 10h;
+  -[#blue,bold]->
+  #b0c9fb:T2.3 - tiempo = 20h;
+  -[#blue,bold]->
+}
+split again
+
+package "3" {
+  -[#red,bold]->
+  #b0fbf9:T3.1 - tiempo = 2h;
+  -[#red,bold]->
+  #b0fbf9:T3.2 - tiempo = 4h;
+  -[#red,bold]->
+  #b0fbf9:T3.3 - tiempo = 6h;
+  -[#red,bold]->
+  #b0fbf9:T3.4 - tiempo = 4h;
+  -[#red,bold]->
+}
+split again
+
+package "4" {
+  -[dashed]->
+  #b0fbbf:T4.1 - tiempo = 12h;
+  -[dashed]->
+  #b0fbbf:T4.2 - tiempo = 30h;
+  -[dashed]->
+  #b0fbbf:T4.3 - tiempo = 4h;
+  -[dashed]->
+}
+split again
+
+package "5" {
+  split
+    #fbf9b0:T5.1 - tiempo = 20h;
+    #fbf9b0:T5.2 - tiempo = 20h;
+  split again
+    -[dashed]->
+    #fbf9b0:T5.3 - tiempo = 10h;
+    -[dashed]->
+  end  split
+}
+end split
+
+-[#red,bold]->
+
+split
+
+package "6" {
+  -[#red,bold]->
+  #fbdab0:T6.1 - tiempo = 40h;
+  -[#red,bold]->
+  #fbdab0:T6.2 - tiempo = 30h;
+  -[#red,bold]->
+  #fbdab0:T6.3 - tiempo = 110h;
+  -[#red,bold]->
+}
+split again
+
+package "7" {
+  -[#blue,bold]->
+  #fbb0f4:T7.1 - tiempo = 20h;
+  -[#blue,bold]->
+  #fbb0f4:T7.2 - tiempo = 40h;
+  -[#blue,bold]->
+  #fbb0f4:T7.3 - tiempo = 20h;
+  -[#blue,bold]->
+  #fbb0f4:T7.4 - tiempo = 10h;
+  -[#blue,bold]->
+}
+end split
+
+-[#red,bold]->
+
+package "8" {
+  #d6fbb0:T8.1 - tiempo = 40h;
+  -[#red,bold]->
+  #d6fbb0:T8.2 - tiempo = 10h;
+  -[#red,bold]->
+}
+
+
+package "9" {
+  #fbc1b0:T9.1 - tiempo = 40h;
+  -[#red,bold]->
+  #fbc1b0:T9.2 - tiempo = 40h;
+  -[#red,bold]->
+  #fbc1b0:T9.3 - tiempo = 32h;
+  -[#red,bold]->
+}
+:FIN;
+
+@enduml

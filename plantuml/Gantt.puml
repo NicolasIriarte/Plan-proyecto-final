@@ -1,0 +1,153 @@
+@startgantt
+
+projectscale monthly zoom 4
+Project starts the 01th of august 2023
+
+[1.1 - Definición de requerimientos con el cliente] as [1.1] lasts 2 days
+[1.2 - Planificación] as [1.2] lasts 10 days
+[2.1 - Recopilación de documentación online] as [2.1] lasts 2 days
+[2.2 - Lectura y comprensión de los documentos] as [2.2] lasts 5 days
+[2.3 - Capacitación sobre el conjunto de instrucciones del procesador] as [2.3] lasts 10 days
+[3.1 - Creación del repositorio de desarrollo] as [3.1] lasts 1 days
+[3.2 - Creación del ambiente de CI/CD para tests] as [3.2] lasts 2 days
+[3.3 - Desarrollo  del ambiente CI/CD para documentación] as [3.3] lasts 3 days
+[3.4 - Creación del ambiente de CI/CD para empaquetado] as [3.4] lasts 2 days
+[4.1 - Revisión y análisis de código existente] as [4.1] lasts 6 days
+[4.2 - Selección del código a reutilizar e importación] as [4.2] lasts 14 days
+[4.3 - Refactorización del código] as [4.3] lasts 2 days
+[5.1 - Lectura de documentación] as [5.1] lasts 10 days
+[5.2 - Internalización con su API] as [5.2] lasts 10 days
+[5.3 - Pruebas de límites y alcances del framework] as [5.3] lasts 5 days
+[6.1 - Desarrollo de modelos de periféricos] as [6.1] lasts 19 days
+[6.2 - Desarrollo de modelos de memorias y registros] as [6.2] lasts 14 days
+[6.3 - Desarrollo de instrucciones] as [6.3] lasts 52 days
+[7.1 - Pruebas unitarias de modelos] as [7.1] lasts 10 days
+[7.2 - Pruebas unitarias de instrucciones] as [7.2] lasts 19 days
+[7.3 - Pruebas de API] as [7.3] lasts 10 days
+[7.4 - Corrección de errores] as [7.4] lasts 5 days
+[8.1 - Creación del manual de usuario] as [8.1] lasts 19 days
+[8.2 - Documentación de API en Doxygen] as [8.2] lasts 5 days
+[9.1 - Preparación de las memorias] as [9.1] lasts 19 days
+[9.2 - Redacción de las memorias] as [9.2] lasts 19 days
+[9.3 - Presentación del trabajo] as [9.3] lasts 15 days
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+[1.1] is colored in #ffc6c6/#000000
+[1.2] is colored in #ffc6c6/#000000
+
+[2.1] is colored in #b0c9fb/#000000
+[2.2] is colored in #b0c9fb/#000000
+[2.3] is colored in #b0c9fb/#000000
+
+[3.1] is colored in #b0fbf9/#000000
+[3.2] is colored in #b0fbf9/#000000
+[3.3] is colored in #b0fbf9/#000000
+[3.4] is colored in #b0fbf9/#000000
+
+[4.1] is colored in #b0fbbf/#000000
+[4.2] is colored in #b0fbbf/#000000
+[4.3] is colored in #b0fbbf/#000000
+
+[5.1] is colored in #fbf9b0/#000000
+[5.2] is colored in #fbf9b0/#000000
+[5.3] is colored in #fbf9b0/#000000
+
+[6.1] is colored in #fbdab0/#000000
+[6.2] is colored in #fbdab0/#000000
+[6.3] is colored in #fbdab0/#000000
+
+[7.1] is colored in #fbb0f4/#000000
+[7.2] is colored in #fbb0f4/#000000
+[7.3] is colored in #fbb0f4/#000000
+[7.4] is colored in #fbb0f4/#000000
+
+[8.1] is colored in #d6fbb0/#000000
+[8.2] is colored in #d6fbb0/#000000
+
+[9.1] is colored in #fbc1b0/#000000
+[9.2] is colored in #fbc1b0/#000000
+[9.3] is colored in #fbc1b0/#000000
+
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+/' ' Paralelización
+ ' [1.2] starts at [1.1]'s end
+ '
+ ' [2.1] starts at [1.2]'s end
+ ' [2.2] starts at [2.1]'s end
+ ' [2.3] starts at [2.2]'s end
+ '
+ ' [3.1] starts at [1.2]'s end
+ ' [3.2] starts at [3.1]'s end
+ ' [3.3] starts at [3.2]'s end
+ ' [3.4] starts at [3.3]'s end
+ '
+ ' [4.1] starts at [1.2]'s end
+ ' [4.2] starts at [4.1]'s end
+ ' [4.3] starts at [4.2]'s end
+ '
+ ' [5.1] starts at [1.2]'s end
+ ' [5.2] starts at [5.1]'s end
+ '
+ ' [5.3] starts at [1.2]'s end
+ '
+ ' [6.1] starts at [3.4]'s end
+ ' [6.2] starts at [6.1]'s end
+ ' [6.3] starts at [6.2]'s end
+ '
+ ' [7.1] starts at [3.4]'s end
+ ' [7.2] starts at [7.1]'s end
+ ' [7.3] starts at [7.2]'s end
+ ' [7.4] starts at [7.3]'s end
+ '
+ ' [8.1] starts at [6.3]'s end
+ ' [8.2] starts at [8.1]'s end
+ '
+ '
+ ' [9.1] starts at [8.2]'s end
+ ' [9.2] starts at [9.1]'s end
+ ' [9.3] starts at [9.2]'s end
+ '/
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Sin paralelización
+
+[1.2] starts at [1.1]'s end
+
+[2.1] starts at [1.2]'s end
+[2.2] starts at [2.1]'s end
+[2.3] starts at [2.2]'s end
+
+[3.1] starts at [2.3]'s end
+[3.2] starts at [3.1]'s end
+[3.3] starts at [3.2]'s end
+[3.4] starts at [3.3]'s end
+
+[4.1] starts at [3.4]'s end
+[4.2] starts at [4.1]'s end
+[4.3] starts at [4.2]'s end
+
+[5.1] starts at [4.3]'s end
+[5.2] starts at [5.1]'s end
+
+[5.3] starts at [5.2]'s end
+
+[6.1] starts at [5.3]'s end
+[6.2] starts at [6.1]'s end
+[6.3] starts at [6.2]'s end
+
+[7.1] starts at [6.3]'s end
+[7.2] starts at [7.1]'s end
+[7.3] starts at [7.2]'s end
+[7.4] starts at [7.3]'s end
+
+[8.1] starts at [7.4]'s end
+[8.2] starts at [8.1]'s end
+
+[9.1] starts at [8.2]'s end
+[9.2] starts at [9.1]'s end
+[9.3] starts at [9.2]'s end
+
+
+@endgantt

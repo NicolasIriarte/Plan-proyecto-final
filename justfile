@@ -1,6 +1,10 @@
 # Build tex files into a PDF.
 build:
     #!/bin/bash
+    cd plantuml
+    plantuml *.puml
+    mv *.png ../assets/
+    cd ..
     pdflatex -shell-escape \\nonstopmode\\input IriarteNicolas.tex
 
 # Clean repository.
