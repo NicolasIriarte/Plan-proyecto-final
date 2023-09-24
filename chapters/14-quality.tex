@@ -2,19 +2,87 @@
 \section{14. Gestión de la calidad}
 \label{sec:calidad}
 
-\begin{consigna}{red}
-Elija al menos diez requerientos que a su criterio sean los más importantes/críticos/que aportan más valor y para cada uno de ellos indique las acciones de verificación y validación que permitan asegurar su cumplimiento.
-
 \begin{itemize}
-\item Req \#1: copiar acá el requerimiento.
 
-\begin{itemize}
-	\item Verificación para confirmar si se cumplió con lo requerido antes de mostrar el sistema al cliente. Detallar
-	\item Validación con el cliente para confirmar que está de acuerdo en que se cumplió con lo requerido. Detallar
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Req #1: el emulador deberá ejecutar los mismos binarios que se utilizan en el hardware real.
+
+  \begin{itemize}
+  \item Verificación: tomar un software conocido que haya sido ejecutado en el hardware real.
+  \item Validación: chequear que el emulador ejecute dicho software y finalize sin errores.
+  \end{itemize}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Req #2: el sistema debe ser compatible con el sistema operativo Linux.
+
+  \begin{itemize}
+  \item Verificación: no aplica.
+  \item Validación: sobre un entorno Linux chequear que el emulador se ejecute.
+  \end{itemize}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Req #3: el emulador deberá poder ejecutar correctamente parte del set de instrucciones del procesador real.
+
+  \begin{itemize}
+  \item Verificación: tomar algún binario que cuya ejecución deje la memoria en un estado conocido.
+  \item Validación: se la ejecución deje la memoria emulada en dicho estado.
+  \end{itemize}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Req #4: se deberán desarrollar tests unitarios que verifiquen el set de instrucciones desarrollado.
+
+  \begin{itemize}
+  \item Verificación: no aplica.
+  \item Validación: se podrán compilar y ejecutar dichos tests para verificar su funcionamiento.
+  \end{itemize}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Req #5: se deberá desarrollar un ambiente de automatización de pruebas en Gitlab CI.
+
+  \begin{itemize}
+  \item Verificación: no aplica.
+  \item Validación: se entregarán reporte de tests ejecutados por el CI.
+  \end{itemize}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Req #6: el software podrá utilizarse como biblioteca compartida.
+
+  \begin{itemize}
+  \item Verificación: se entregarán los \textit{headers} y librería compartida para poder extender la funcionalidad y/o integrarla en otros ambientes.
+  \item Validación: inspeccionar el entregable.
+  \end{itemize}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Req #7: la API expuesta deberá estar documentada con Doxygen.
+
+  \begin{itemize}
+  \item Verificación: no aplica.
+  \item Validación: el cliente tendrá acceso a dicha documentación.
+  \end{itemize}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Req #8: se realizará un manual de usuario que describa los funcionamientos clave del software.
+
+  \begin{itemize}
+  \item Verificación: no aplica.
+  \item Validación: inspección del manual.
+  \end{itemize}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Req #10: la API expuesta deberá ser en C.
+
+  \begin{itemize}
+  \item Verificación: no aplica.
+  \item Validación: el cliente tendrá acceso al código fuente de la API.
+  \end{itemize}
+
 \end{itemize}
 
-\end{itemize}
+%% Tener en cuenta que en este contexto se pueden mencionar simulaciones, cálculos, revisión de hojas de datos, consulta con expertos, mediciones, etc.
 
-Tener en cuenta que en este contexto se pueden mencionar simulaciones, cálculos, revisión de hojas de datos, consulta con expertos, mediciones, etc.  Las acciones de verificación suelen considerar al entregable como ``caja blanca'', es decir se conoce en profundidad su funcionamiento interno.  En cambio, las acciones de validación suelen considerar al entregable como ``caja negra'', es decir, que no se conocen los detalles de su funcionamiento interno.
+%% Las acciones de verificación suelen considerar al entregable como ``caja
+%% blanca'', es decir se conoce en profundidad su funcionamiento interno.
 
-\end{consigna}
+%%En cambio, las acciones de validación suelen considerar al entregable como
+%%``caja negra'', es decir, que no se conocen los detalles de su funcionamiento
+%%interno.

@@ -2,62 +2,94 @@
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
 
-\begin{consigna}{red}
-a) Identificación de los riesgos (al menos cinco) y estimación de sus consecuencias:
+\begin{enumerate}[label=\alph*)] % Lowercase alphabetic enumeration
+\item Identificación de los riesgos y estimación de sus consecuencias:
 
-Riesgo 1: detallar el riesgo (riesgo es algo que si ocurre altera los planes previstos de forma negativa)
-\begin{itemize}
-	\item Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de severidad (S).
-	\item Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de (O).
-\end{itemize}
+  A continuación se detallan cinco posibles riesgos inherentes al proyecto. Los mismos son evaluados según su grado de severidad y su probabilidad de ocurrrencia tomando valores del 1 (bajo) al 10 (alto).
 
-Riesgo 2:
-\begin{itemize}
-	\item Severidad (S):
-	\item Ocurrencia (O):
-\end{itemize}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \textbf{Riesgo 1}: no finalizar el proyecto en el plazo de tiempo establecido.
 
-Riesgo 3:
-\begin{itemize}
-	\item Severidad (S):
-	\item Ocurrencia (O):
-\end{itemize}
+  \begin{itemize}
+  \item Severidad (S): 10. Severidad alta porque no se cumpliría con la fecha de entrega límite establecida.
+  \item Ocurrecia (O): 6. Es probable ya que la totalidad del proyecto se realizará fuera del horario laboral.
+  \end{itemize}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \textbf{Riesgo 2}: dificultad en la capacitación en el \textit{framework} LLVM.
 
 
-b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
+  \begin{itemize}
+  \item Severidad (S): 8. Severidad media/alta porque se planea tomar varias funcionalidad de dicho \textit{framework}, que de otra manera implicarían un esfuerzo mucho mayor.
+  \item Ocurrecia (O): 5. Es probable que suceda ya que es un proyecto de alta complejidad, pero al mismo tiempo tiene mucha documentación asociada.
+  \end{itemize}
 
-\begin{table}[htpb]
-\centering
-\begin{tabularx}{\linewidth}{@{}|X|c|c|c|c|c|c|@{}}
-\hline
-\rowcolor[HTML]{C0C0C0}
-Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-\end{tabularx}%
-\end{table}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \textbf{Riesgo 3}: bajo desempeño del emulador, con ejecuciones que no alcancen al tiempo real.
 
-Criterio adoptado:
-Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a...
+  \begin{itemize}
+  \item Severidad (S): 3. Baja severidad, ya que se plantea un prototipo sin funcionanlidad completa, que luego podría ser optimizado para cumplir los requerimientos de performance.
+  \item Ocurrecia (O): 6. Es probable que suceda ya que se trata de un \textit{software} de alta complejidad computacional.
+  \end{itemize}
 
-Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \textbf{Riesgo 4}: dificultad en la comprensión de documentos, tanto de \textit{datasheets} como de manuales de arquitectura del procesador.
 
-c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
 
-Riesgo 1: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-  Nueva asignación de S y O, con su respectiva justificación:
-  - Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de severidad (S).
-  - Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de (O).
+  \begin{itemize}
+  \item Severidad (S): 10. Alta severidad, ya que sin entender dichos documentos no es posible desarrollar software que cumpla el correcto funcionamiento del procesador.
+  \item Ocurrecia (O): 8. Se estima una alta probabilidad de ocurrencia debido a que son documentos sumamente extensos y de gran detalle técnico.
+  \end{itemize}
 
-Riesgo 2: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \textbf{Riesgo 5}: dificultad para localizar y depurar errores de desarrollo del \textit{software}.
 
-Riesgo 3: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
 
-\end{consigna}
+  \begin{itemize}
+  \item Severidad (S): 4. Media severidad, ya que al estár internalizado con el código fuente, todas las fuentes de errores son facilmente identificables.
+  \item Ocurrecia (O): 8. Media/alta ocurrencia, ya que es normal cometer errores en la programación de código.
+  \end{itemize}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Tabla de gestión de riesgos: (El RPN se calcula como RPN = $\text{S} \times \text{O}$)
+
+
+  \begin{table}[htpb]
+    \centering
+    \begin{tabularx}{\linewidth}{@{}|X|c|c|c|c|c|c|@{}}
+      \hline
+      \rowcolor[HTML]{C0C0C0}
+      Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
+      1. No finalizar el proyecto en el plazo de tiempo establecido. & 10  & 6  &  60   &  10  &  4  &   40   \\ \hline
+      2. Dificultad en la capacitación en el \textit{framework} LLVM. & 8  & 5  &  40   &  -  &  -  &   -   \\ \hline
+      3. Bajo desempeño del emulador, con ejecuciones que no alcancen al tiempo real. &  3 & 6  &  18   &  -  &  -  &   -   \\ \hline
+      4. Dificultad en la comprensión de documentos, tanto de \textit{datasheets} como de manuales de arquitectura del procesador. & 10  & 8  &  80   &  7  &  7  &  49    \\ \hline
+      5. Dificultad para localizar y depurar errores de desarrollo del \textit{software}. &  4 & 8  &  32   &  -  & -  &   -   \\ \hline
+    \end{tabularx}
+  \end{table}
+
+  Criterio adoptado: se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a 50.
+
+  Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
+
+\item Plan de mitigación de los riesgos que orifginalmente excedían el RPN máximo establecido.
+
+  \textbf{Riesgo 1}: se asignarán horas fijas semanales para garantizar que el proyecto se lleve a cabo en
+  el tiempo estipulado.
+
+  \begin{itemize}
+  \item Severidad (S*): 10. Se mantiene la misma severidad que antes de la mitigación.
+  \item Ocurrecia (O*): 4. Baja significativamente la probabilidad de ocurrencia de este riesgo ya
+que se tratará de ser riguroso con el seguimiento y control del plan de proyecto estipulado.
+  \end{itemize}
+
+  \textbf{Riesgo 4}: se utilizará el modelo de referencia provisto por la empresa para despejar dudas sobre la documentación respecto al funcionamiento esperado.
+
+  \begin{itemize}
+  \item Severidad (S*): 7. Se disminuye la severidad, ya que la documentación deja de ser el único punto de referencia para establecer el correcto funcionamiento del procesador.
+  \item Ocurrecia (O*): 7. Reduce la ocurrencia levemente porque se chequearán ambas fuentes de verdad.
+  \end{itemize}
+
+\end{enumerate}
+
